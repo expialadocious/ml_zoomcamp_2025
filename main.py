@@ -3,31 +3,16 @@ import pickle
 from sklearn.pipeline import make_pipeline
 
 
-## Question 3 use "pickled" model to predict on 1 test value
-with open('pipeline_v1.bin', 'rb') as f_in:
-    pipeline = pickle.load(f_in)
+# ## Question 4, 5, and 6
+# ## Also built Dockerfile
+# #Now let's serve this model as a web service
 
-def predict_single(customer):
-    result = pipeline.predict_proba(customer)[0,1]
-    return float(result)
-
-## load sample customer
-cust1 = {
-    "lead_source": "paid_ads",
-    "number_of_courses_viewed": 2,
-    "annual_income": 79276.0
-
-}
-
-predict_single(cust1)
-
-## Question 4, 5, and 6
-## Also built Dockerfile
-#Now let's serve this model as a web service
-
-#Install FastAPI
+# #Install FastAPI
 #Write FastAPI code for serving the model
 #Now score this client using requests:
+
+### NOTE: Docker Image "FROM" contains pipeline_v2.bin model
+
 import uvicorn
 from typing import Literal
 from pydantic import BaseModel, Field
@@ -49,7 +34,7 @@ class PredictResponse(BaseModel):
 
 app = FastAPI(title='customer-churn-predictions')
 
-with open('pipeline_v1.bin', 'rb') as f_in:
+with open('pipeline_v2.bin', 'rb') as f_in:
     pipeline = pickle.load(f_in)
 
 def predict_single(customer):
