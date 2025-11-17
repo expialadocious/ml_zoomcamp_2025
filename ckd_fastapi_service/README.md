@@ -23,20 +23,21 @@ I wanted to utilize medical data that addresses the intersection of Chronic Kidn
   * su: sugar            (greater > 0)
   * bgr: blood glucose random   (greater > 0)
   * bu: blood urea       (greater > 0)
-    sc: serum creatinine  (greater > 0)
-    sod: sodium           (greater > 0)
-    pot: potassium        (greater > 0)
-    hemo: hemoglobin      (greater > 0)
-    pcv: packed cell volume         (greater > 0)
-    wbcc: white blood cell count    (greater > 0)
-    rbcc: red blood cell count      (greater > 0)
+  * sc: serum creatinine  (greater > 0)
+  * sod: sodium           (greater > 0)
+  * pot: potassium        (greater > 0)
+  * hemo: hemoglobin      (greater > 0)
+  * pcv: packed cell volume         (greater > 0)
+  * wbcc: white blood cell count    (greater > 0)
+  * rbcc: red blood cell count      (greater > 0)
 
-    # Categorical features
-    pcc: pus cell clumps  ["notpresent", "present"]
-    ba: bacterial         ["notpresent", "present"]
-    htn: hypertension   ["yes", "no"]
-    dm: diabetes        ["yes", "no"]
-    cad: coronary artery disease    ["yes", "no"]
-    appet: appetite    ["good", "poor"]
-    pe: pedal edema    ["yes", "no"]
-    ane: anemia     ["yes", "no"]
+  Categorical features
+  * pcc: pus cell clumps  ["notpresent", "present"]
+  * ba: bacterial         ["notpresent", "present"]
+  * htn: hypertension   ["yes", "no"]
+  * dm: diabetes        ["yes", "no"]
+  * cad: coronary artery disease    ["yes", "no"]
+  * appet: appetite    ["good", "poor"]
+  * pe: pedal edema    ["yes", "no"]
+  * ane: anemia     ["yes", "no"]
+
