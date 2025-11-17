@@ -14,6 +14,7 @@ I wanted to utilize medical data that addresses the intersection of Chronic Kidn
     * Use files in repository and Dockerfile to create docker image and container
 
     * Launch FAST API inside Docker container and interact with XGBoost Classifier model in the server to predict if patient has "CKD" or not.
+    * Use Request.py to interact with FAST API server using request to POST JSON features to FAST API and receive prediction from the model if patient is CKD True or False.
 
 * Feature Information are as followed:
   * age: years           (greater > 0, less < 120)
@@ -40,4 +41,5 @@ I wanted to utilize medical data that addresses the intersection of Chronic Kidn
   * appet: appetite    ["good", "poor"]
   * pe: pedal edema    ["yes", "no"]
   * ane: anemia     ["yes", "no"]
+
 
