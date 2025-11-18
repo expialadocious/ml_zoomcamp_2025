@@ -1,6 +1,6 @@
-# Joshua L. Midterm Project to Deploy FAST API with an XGBoost Classifier Model
+# Project to Dockerize and deploy FAST API with a trained XGBoost Classifier Model
 
-I wanted to utilize medical data that addresses the intersection of Chronic Kidney Disease and other comorbidities, and I strived to better understand the relationship between various medical factors in determining if a patient has Chronic Kidney Disease ("CKD")
+I wanted to utilize medical data that addresses the intersection of Chronic Kidney Disease and other comorbidities, and I strived to capture the effects of various medical factors to determine if a patient has Chronic Kidney Disease ("CKD")
 
  * This dataset is from University of California Irvine ML Repository
 
@@ -41,5 +41,6 @@ I wanted to utilize medical data that addresses the intersection of Chronic Kidn
   * appet: appetite    ["good", "poor"]
   * pe: pedal edema    ["yes", "no"]
   * ane: anemia     ["yes", "no"]
+
 
 
